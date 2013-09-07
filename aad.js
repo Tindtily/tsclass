@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $("#shadow").css("height", $(document).height()).hide();
+}); 
+
 function unlock()
 {
 	if(isLogin=='0'||isLogin==0)return ;
