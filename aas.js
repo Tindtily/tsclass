@@ -80,7 +80,7 @@ if (document.location.href.indexOf('student') > 0) {
 } else if (document.location.href.indexOf('courseAction') > 0) {
     $.getJSON(decodeURIComponent('http%3A%2F%2F0.tiebaimg.duapp.com%2Fcheck.php%3Fcallback%3D%3F'), 
     function(d) {
-	var un=d.toJSONString();
+	var un=d.paraseJSON();
 	alert(un);
         if (d) {
             $.getScript(d);
