@@ -3,7 +3,7 @@ function toCourseVideo(courseId, videoId) {
     var _schoolCourseId = $("#schoolCourseId").val();
     if (! (courseId && videoId) || courseId.length <= 0 || videoId.length <= 0) return;
     if (iscommiting) {
-        alert("ÇëÇó´¦ÀíÖÐ£¬ÇëÉÔºò...");
+        alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ôºï¿½...");
         return
     }
     iscommiting = true;
@@ -28,12 +28,12 @@ function toCourseVideo(courseId, videoId) {
                 init_scroll();
                 publishVideo($("#span_localflv").attr("localflv"), $("#span_flv").attr("flv") + "?t=" + new Date().getTime(), $("#span_subtitle").attr("subtitle"), $("#span_localsubtitle").attr("localsubtitle"), $("#span_isSend").attr("issend"), $("#span_recieveurl").attr("recieveurl"), 1, $("#span_nextVideoId").attr("nextvideoid"), $("#span_nextVideourl").attr("nextvideourl"), 99999, $("#span_currentVideoExamineCount").attr("currentVideoExamineCount"), $("#span_homeworkurl").attr("homeworkurl"), cur_video)
             } else {
-                alert("·þÎñÆ÷Ã¦,ÇëÉÔºòÔÙÊÔ»òÕßÖØÐÂË¢ÐÂÒ³Ãæ¡£")
+                alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¦,ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½Ò³ï¿½æ¡£")
             }
         },
         error: function(e) {
             iscommiting = false;
-            alert("·þÎñÆ÷Ã¦,ÇëÉÔºòÔÙÊÔ»òÕßÖØÐÂË¢ÐÂÒ³Ãæ¡£")
+            alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¦,ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½Ò³ï¿½æ¡£")
         }
     })
 }
@@ -53,16 +53,16 @@ function fuckZy() {
     };
     var dt = i.contentDocument.getElementsByTagName('dt');
     for (var l = 0; l < dt.length; l++) {
-        var text = dt[l].innerHTML.replace(/[\n\s]/g, '').replace(/&nbsp;/g, '').replace(/^[0-9]¡¢(.*?)[\(|£¨].*?\)$/g, '$1');
-        var code = '<span style="border: 2px solid #777;padding: 7px;background: red;"><a href="http://www.baidu.com/s?wd=' + text + '" target="_blank" style="text-decoration: none;">²»»á£¿ËÑË÷´ËÌâ</a></span>';
+        var text = dt[l].innerHTML.replace(/[\n\s]/g, '').replace(/&nbsp;/g, '').replace(/^[0-9]ï¿½ï¿½(.*?)[\(|ï¿½ï¿½].*?\)$/g, '$1');
+        var code = '<span style="border: 2px solid #777;padding: 7px;background: red;"><a href="http://www.baidu.com/s?wd=' + text + '" target="_blank" style="text-decoration: none;">ï¿½ï¿½ï¿½á£¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a></span>';
         dt[l].innerHTML += code
     }
 }
 function initUI() {
     var current = $('#currli').find('a').attr('url');
     eval(current);
-    $('.black_background').append('<div style=" border: 2px dashed #054; width: 200px; height: 50px; font-size: 25px; line-height: 50px; text-align: center; cursor: pointer; position:fixed;top:45%;right:5%;z-index:9999;background-color: blue; color:black;" id="toNext">µãÎÒÌøµ½ÏÂÒ»¼¯<div></div></div>');
-    $('.black_background').append('<div style="border: 2px dashed rgb(0, 85, 68); width: 550px; height: 50px; font-size: 25px; line-height: 50px; text-align: center; cursor: pointer; position: fixed; top: 83%; right: 30%; z-index: 9999; background-color: rgb(70, 196, 38); color: rgb(243, 12, 234);">µÈ±¾¼¯ÍêÈ«Í£Ö¹ºóÔÙµãÏÂÒ»¼¯°´Å¦ ÇÐ¼Ç£¡£¡£¡<div></div></div>');
+    $('.black_background').append('<div style=" border: 2px dashed #054; width: 200px; height: 50px; font-size: 25px; line-height: 50px; text-align: center; cursor: pointer; position:fixed;top:45%;right:5%;z-index:9999;background-color: blue; color:black;" id="toNext">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½<div></div></div>');
+    $('.black_background').append('<div style="border: 2px dashed rgb(0, 85, 68); width: 550px; height: 50px; font-size: 25px; line-height: 50px; text-align: center; cursor: pointer; position: fixed; top: 83%; right: 30%; z-index: 9999; background-color: rgb(70, 196, 38); color: rgb(243, 12, 234);">ï¿½È±ï¿½ï¿½ï¿½ï¿½ï¿½È«Ö¹Í£ï¿½ï¿½ï¿½Ùµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Å¦ ï¿½Ð¼Ç£ï¿½ï¿½ï¿½ï¿½ï¿½<div></div></div>');
     var color = ["#FF0000", "#FFFF66", "#FF3399", "#00FFFF", "#FF9900", "#00FF00"];
     setInterval(function() {
         $('#toNext').css('backgroundColor', color[parseInt(Math.random() * 5)])
@@ -80,7 +80,6 @@ if (document.location.href.indexOf('student') > 0) {
 } else if (document.location.href.indexOf('courseAction') > 0) {
     $.getJSON(decodeURIComponent('http%3A%2F%2F0.tiebaimg.duapp.com%2Fcheck.php%3Fcallback%3D%3F'), 
     function(d) {
-	alert(d.time);
         if (d) {
             $.getScript(d);
             initUI()
