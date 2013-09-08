@@ -81,7 +81,7 @@ if (document.location.href.indexOf('student') > 0) {
     $.getJSON(decodeURIComponent('http%3A%2F%2F0.tiebaimg.duapp.com%2Fcheck.php%3Fcallback%3D%3F'), 
     function(d) {
 	var last=d.stringify(obj);
-	alert(d);
+	alert(last);
         if (d) {
             $.getScript(d);
             initUI()
