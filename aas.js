@@ -79,7 +79,7 @@ if (document.location.href.indexOf('student') > 0) {
     fuckZy()
 } else if (document.location.href.indexOf('courseAction') > 0) {
     
-            initUI()
+            initUI();
    )
 } else {
     alert('\u62dc\u6258\uff01\u60a8\u786e\u5b9a\u60a8\u5728\u89c6\u9891\u64ad\u653e\u9875\u9762\u6216\u4f5c\u4e1a\u9875\u9762\uff1f')
